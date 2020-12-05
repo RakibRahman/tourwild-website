@@ -127,3 +127,93 @@ nav ul li a:hover {
   font-weight: 500;
   color: var(--light);
 }
+/* end of header container */
+
+/*==========
+Quote
+=========== */
+.quote {
+  padding: 10px 5px;
+  background: #2b1a10;
+}
+.quote blockquote {
+  border-left: 10px solid var(--indigo);
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+}
+
+blockquote p {
+  font-size: 3ch;
+  line-height: 1.55;
+  text-align: center;
+  color: var(--light);
+  font-weight: 600;
+}
+.quote blockquote .said {
+  color: var(--success);
+}
+.quote blockquote p span {
+  color: var(--success);
+}
+/* End of quote */
+
+/* =======
+Events
+=========== */
+.events {
+  margin: 100px 0px;
+  background: var(--white);
+}
+.events .tagline {
+  display: grid;
+  place-items: center;
+  margin-bottom: 50px;
+}
+.events .tagline h1 {
+  font-size: 3rem;
+  color: var(--warning);
+}
+.events .tagline .bdr {
+  width: 100px;
+  height: 3px;
+  background: var(--success);
+  margin: 20px 0;
+}
+
+.events .event-cards {
+  display: flex;
+  justify-content: space-evenly;
+}
+.events .event-cards .card {
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  grid-gap: 20px;
+  padding: 5px 10px;
+  width: 420px;
+}
+.event-cards .card img {
+  width: 400px;
+  box-shadow: 10px 8px 0px var(--success);
+}
+.event-cards .card p {
+  color: var(--secondary);
+  line-height: 1.5;
+  text-align: center;
+}
+.event-cards .card button {
+  border: 0;
+  padding: 10px 15px;
+  background: var(--blue);
+  border-radius: 20px;
+  transition: 0.3s;
+}
+.event-cards .card button a {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--light);
+}
+.event-cards .card button:hover {
+  transform: translateY(-5px);
+}
