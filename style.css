@@ -30,6 +30,7 @@
   background: var(--pink);
 }
 body {
+  position: relative;
   font-family: "Montserrat", sans-serif;
 }
 .header-container {
@@ -194,6 +195,8 @@ Events
 }
 .event-cards .card img {
   width: 400px;
+  height: 300px;
+  object-fit: cover;
   box-shadow: 10px 8px 0px var(--success);
 }
 .event-cards .card p {
@@ -284,7 +287,6 @@ upcoming
 ============ */
 .upcoming-wrapper {
   margin: 50px 0;
-  height: 100vh;
   display: flex;
   justify-content: space-around;
   align-content: center;
@@ -367,4 +369,101 @@ footer img {
   margin-right: 10px;
   width: 45px;
   height: 45px;
+}
+
+/* Responsiveness */
+
+@media only screen and (max-width: 1100px) {
+  .upcoming-wrapper {
+    margin: 150px 0;
+    flex-flow: row wrap;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .event-cards {
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .up-tours {
+    display: grid;
+    place-items: center;
+  }
+  .up-tours h1 {
+    color: var(--pink);
+  }
+  .up-tours .bdr {
+    margin-left: auto;
+  }
+  .gallery {
+    flex-flow: column wrap;
+    justify-content: center;
+  }
+  .gallery .pics .small,
+  .gallery .pics .big {
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+  }
+  .intro h1 {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 620px) {
+  nav {
+    flex-wrap: wrap;
+  }
+  .gallery {
+    margin-left: 40px;
+  }
+  .gallery .pics .small,
+  .gallery .pics .big {
+    width: 500px;
+    height: 400px;
+    object-fit: cover;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .gallery .pics .small,
+  .gallery .pics .big {
+    width: 350px;
+    height: 400px;
+    object-fit: cover;
+  }
+  .gallery {
+    margin-left: 50px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .intro h3 {
+    text-align: center;
+  }
+  blockquote p {
+    font-size: 18px;
+  }
+  .tagline h1 {
+    text-align: center;
+  }
+  .event-cards .card {
+    width: 350px;
+  }
+  .event-cards .card img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+  }
+  .explore h1 {
+    color: var(--pink);
+  }
+  .explore {
+    text-align: center;
+    margin-left: 60px;
+    display: grid;
+    place-items: center;
+  }
+  .up-tours p {
+    color: var(--success);
+    text-align: center;
+    font-size: 16px;
+  }
 }
